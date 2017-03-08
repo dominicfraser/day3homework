@@ -28,3 +28,30 @@ def get_first_key(teachers_wallets)
 end
 
 #5.
+
+countries = {
+  uk: {
+    capital: 'London',
+    population: 60
+  },
+  france: {
+    capital: 'Paris',
+    population: 70
+  },
+  italy: {
+    capital: 'Rome',
+    population: 56
+  }
+}
+
+def array_of_capitals(array)
+  capital_array = []
+  array.each do |country, co_prop| 
+    co_prop.each do |key, value|
+      if key == :capital
+        capital_array.push(value)
+      end
+    end
+  end
+  return capital_array
+end
