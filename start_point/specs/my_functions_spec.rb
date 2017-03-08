@@ -6,7 +6,7 @@ class My_Functions < MiniTest::Test
 
   # Write a function that takes has two parameters, array1 and array2
   # It should return the sum of the array lengths
-  def test_add_length_of_arrays
+  def test_add_length_of_arrays()
     result = add_array_lengths( [ "Zsolt", "Sandy" ], [ "John", "Darren", "Kat" ] )
     assert_equal( 5, result )
   end
