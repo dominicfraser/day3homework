@@ -29,20 +29,7 @@ end
 
 #5.
 
-countries = {
-  uk: {
-    capital: 'London',
-    population: 60
-  },
-  france: {
-    capital: 'Paris',
-    population: 70
-  },
-  italy: {
-    capital: 'Rome',
-    population: 56
-  }
-}
+something.each do |each_entry| 
 
 def array_of_capitals(array)
   capital_array = []
