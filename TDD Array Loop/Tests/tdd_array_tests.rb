@@ -39,7 +39,24 @@ def test_get_first_key
 end
 
 #5.
-
+def test_create_array_of_capitals
+  countries = {
+    uk: {
+      capital: 'London',
+      population: 60
+    },
+    france: {
+      capital: 'Paris',
+      population: 70
+    },
+    italy: {
+      capital: 'Rome',
+      population: 56
+    }
+  }
+  actual = array_of_capitals(countries)
+  assert_equal([ 'London', 'Paris', 'Rome' ], actual)
+end
 
 
 
