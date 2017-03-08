@@ -4,12 +4,16 @@ def add_array_lengths(array1, array2)
 end
 
 #2.
-def test_sum_array
-  result = sum_array( [ 1,2,3,4,5 ] )
-  assert_equal( 15, result )
+def sum_array(array)
+  sum = 0
+  for entry in array 
+    sum += entry
+  end
+  return sum
 end
 
 #3.
+def find_item(array, item)
   if array.index(item) != nil 
     return true
   else
