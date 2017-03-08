@@ -28,9 +28,6 @@ def get_first_key(teachers_wallets)
 end
 
 #5.
-
-something.each do |each_entry| 
-
 def array_of_capitals(array)
   capital_array = []
   array.each do |country, co_prop| 
