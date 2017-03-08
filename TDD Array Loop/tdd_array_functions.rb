@@ -28,14 +28,23 @@ def get_first_key(teachers_wallets)
 end
 
 #5.
-def array_of_capitals(array)
+# def array_of_capitals(hash)
+#   capital_array = []
+#   hash.each do |country, co_prop| 
+#     co_prop.each do |key, value|
+#       if key == :capital
+#         capital_array.push(value)
+#       end
+#     end
+#   end
+#   return capital_array
+# end
+
+def array_of_capitals(hash)
   capital_array = []
-  array.each do |country, co_prop| 
-    co_prop.each do |key, value|
-      if key == :capital
-        capital_array.push(value)
-      end
-    end
+  country_name = hash.keys
+  for c_name in country_name
+     capital_array.push(hash[c_name][:capital])
   end
   return capital_array
 end
