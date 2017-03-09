@@ -19,6 +19,7 @@ puts "4. #{lines.index("Haymarket")}"
 # 5. Add 'Airport' to the start of the array
 lines.unshift("Airport")
 print "5. #{lines}"
+#lines.insert(0, "Airport")
 
 # 6. Add 'York Place' to the end of the array
 lines << "York Place"
