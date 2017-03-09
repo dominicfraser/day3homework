@@ -25,17 +25,21 @@ print "5. #{lines}"
 lines << "York Place"
 puts
 print "6. #{lines}"
+#lines += ["York Place"]
 
 # 7. Remove 'Edinburgh Park' from the array using it's name
 lines.delete("Edinburgh Park")
 puts " "
 print "7. #{lines}"
+#lines -= ["Edinburgh Park"]
+
 
 # 8. Delete 'Edinburgh Park' from the array by index
 lines = ['Gyle Centre', 'Edinburgh Park', 'Murrayfield Stadium', 'Haymarket', 'Princes Street']
 lines.delete(lines[lines.index("Edinburgh Park")])
 puts
 print "8. #{lines}"
+#lines.delete.at(1)
 
 # 9. Reverse the positions of the stops in the array
 puts
