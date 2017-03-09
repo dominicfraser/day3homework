@@ -10,7 +10,7 @@ def sum_array(array)
   return sum
 end
 
-def find_item(array, item)
+def find_item?(array, item)
   if array.index(item) != nil 
     return true
   else
